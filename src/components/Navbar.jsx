@@ -33,7 +33,7 @@ const Navbar = () => {
         </ul>
         <div className="w-full flex lg:justify-center justify-start items-center">
           <Image
-            src="/logo-1.png"
+            src="/logo-5.png"
             width={150}
             height={150}
             className="cursor-pointer w-28 h-28 lg:w-36 lg:h-36"
