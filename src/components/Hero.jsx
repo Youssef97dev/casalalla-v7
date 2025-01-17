@@ -10,7 +10,7 @@ const Hero = () => {
         className="object-cover hidden lg:block"
       />
       <Image
-        src="https://res.cloudinary.com/dz7wroord/image/upload/casalalla-v2/cm7aur2bolaw6ejyzsuq"
+        src="https://res.cloudinary.com/dz7wroord/image/upload/casalalla-v2/ycfub6xp8gjuz3gla8xh"
         height={4160}
         width={2774}
         className="object-cover block lg:hidden"
