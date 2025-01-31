@@ -194,7 +194,7 @@ const ReservDayPass = () => {
         </button>
         <button
           type="button"
-          className="px-3 py-1 bg-primary_11 text-white rounded ml-auto"
+          className="px-3 py-1 bg-casa_6 text-white rounded ml-auto"
           onClick={() => setActiveTab(activeTab === 1 ? 2 : 3)}
         >
           {activeTab === 3 ? "Finish" : "Suivant"}
