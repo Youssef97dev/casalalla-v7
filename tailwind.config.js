@@ -16,6 +16,7 @@ module.exports = {
         casa_6: "var(--casa-6)",
         casa_7: "var(--casa-7)",
         casa_8: "var(--casa-8)",
+        casa_9: "var(--daypass)",
       },
       animation: {
         "slide-left": "slideLeft 2s ease-in-out forwards",

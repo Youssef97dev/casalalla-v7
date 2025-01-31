@@ -72,7 +72,7 @@ const ReservDayPass = () => {
         <div className="w-full">
           {activeTab === 1 && (
             <div className="w-full flex flex-col justify-center items-center gap-3">
-              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
+              <div className="w-full flex flex-row justify-center items-center text-casa_9 gap-2">
                 <div className="w-fit flex flex-row justify-center items-center gap-1">
                   <FaCalendarAlt size={18} />
                   <span>{`${datePass.getDate()}/${
@@ -91,9 +91,7 @@ const ReservDayPass = () => {
                 </div>
               </div>
               <div className="w-full flex flex-col justify-center items-start gap-1 px-3">
-                <strong className="text-primary_11 ">
-                  Nombre de personnes
-                </strong>
+                <strong className="text-casa_9 ">Nombre de personnes</strong>
                 <div className="w-full flex justify-center items-center">
                   <select
                     onChange={(e) => setNumberPerson(e.target.value)}
@@ -117,7 +115,7 @@ const ReservDayPass = () => {
                 className="!w-full  !px-3 !border-none"
               />
               <div className="w-full flex flex-col justify-center items-start gap-1 px-3">
-                <strong className="text-primary_11 ">Heure</strong>
+                <strong className="text-casa_9 ">Heure</strong>
                 <div className="w-full flex justify-center items-center">
                   <select
                     onChange={(e) => setSelectedTime(e.target.value)}
@@ -141,7 +139,7 @@ const ReservDayPass = () => {
         <div className="w-full">
           {activeTab === 2 && (
             <div className="w-full flex flex-col justify-center items-center gap-3">
-              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
+              <div className="w-full flex flex-row justify-center items-center text-casa_9 gap-2">
                 <div className="w-fit flex flex-row justify-center items-center gap-1">
                   <FaCalendarAlt size={18} />
                   <span>{`${datePass.getDate()}/${
@@ -159,10 +157,10 @@ const ReservDayPass = () => {
                   <span>{selectedTime}</span>
                 </div>
               </div>
-              <h1 className="text-[24px] leading-[26.4px]  text-casa_5 font-medium ">{`Une option est requise pour cette réservation.`}</h1>
+              <h1 className="text-[22px] leading-[26.4px]  text-casa_9 font-medium ">{`Une option est requise pour cette réservation.`}</h1>
               <div
-                className={`relative w-full m-2 rounded border border-casa_7 p-3 flex flex-col gap-3 justify-center items-center text-casa_6 hover:bg-casa_6 hover:text-white ${
-                  selectedLunch && "bg-casa_6 text-white"
+                className={`relative w-full m-2 rounded border border-casa_9 p-3 flex flex-col gap-3 justify-center items-center text-casa_9 hover:bg-casa_9 hover:text-white ${
+                  selectedLunch && "bg-casa_9 text-white"
                 }`}
                 onClick={() => setSelectedLunch(!selectedLunch)}
               >
@@ -170,7 +168,7 @@ const ReservDayPass = () => {
                 <p className="text-[16px] leading-[24px] mr-auto">
                   {`You are welcome to join us for a day pass with pool access included. We serve lunch between 1-4pm.`}
                 </p>
-                <div className="absolute top-1 right-1 border border-casa_6 text-casa_6 bg-white px-3 py-1 text-sm">
+                <div className="absolute top-1 right-1 border border-casa_9 text-casa_6 bg-white px-3 py-1 text-sm">
                   {selectedLunch ? "Selected" : "Select"}
                 </div>
               </div>
@@ -180,7 +178,7 @@ const ReservDayPass = () => {
         <div className="w-full">
           {activeTab === 3 && (
             <div className="w-full flex flex-col justify-center items-center gap-3">
-              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
+              <div className="w-full flex flex-row justify-center items-center text-casa_9 gap-2">
                 <div className="w-fit flex flex-row justify-center items-center gap-1">
                   <FaCalendarAlt size={18} />
                   <span>{`${datePass.getDate()}/${
@@ -198,7 +196,7 @@ const ReservDayPass = () => {
                   <span>{selectedTime}</span>
                 </div>
               </div>
-              <h1 className="text-[24px] leading-[26.4px] mr-auto text-casa_6">{`Détails Clients`}</h1>
+              <h1 className="text-[24px] leading-[26.4px] mr-auto text-casa_9">{`Détails Clients`}</h1>
               <div className="w-full flex justify-center items-center gap-3">
                 <input
                   type="text"
@@ -208,7 +206,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Prénom"
                   required
-                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
                 />
                 <input
                   type="text"
@@ -218,7 +216,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Nom"
                   required
-                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
                 />
               </div>
               <div className="w-full flex justify-center items-center gap-3">
@@ -230,7 +228,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
                 />
                 <input
                   type="tel"
@@ -240,10 +238,10 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="phone"
                   required
-                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
                 />
               </div>
-              <span className="text-[16px] text-casa_6 mr-auto  ">
+              <span className="text-[16px] text-casa_9 mr-auto  ">
                 Commentaire
               </span>
               <textarea
@@ -252,7 +250,7 @@ const ReservDayPass = () => {
                 value={formData.commentaire}
                 rows={4}
                 onChange={handleChange}
-                className="w-full border border-casa_6 rounded focus:outline-none text-casa_6 p-3"
+                className="w-full border border-casa_9 rounded focus:outline-none text-casa_9 p-3"
               />
             </div>
           )}
@@ -260,7 +258,7 @@ const ReservDayPass = () => {
         <div className="w-full">
           {activeTab === 4 && (
             <div className="w-full flex flex-col justify-center items-center gap-3">
-              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
+              <div className="w-full flex flex-row justify-center items-center text-casa_9 gap-2">
                 <div className="w-fit flex flex-row justify-center items-center gap-1">
                   <FaCalendarAlt size={18} />
                   <span>{`${datePass.getDate()}/${
@@ -278,35 +276,35 @@ const ReservDayPass = () => {
                   <span>{selectedTime}</span>
                 </div>
               </div>
-              <h1 className="text-[24px] leading-[26.4px] mr-auto text-casa_6">{`Merci de vérifier vos informations`}</h1>
+              <h1 className="text-[22px] leading-[26.4px] mr-auto text-casa_9">{`Merci de vérifier vos informations`}</h1>
               <div className="w-full flex flex-col justify-center items-center gap-1">
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Date :</span>
                   <span className="font-medium">{`${datePass.getDate()}/${
                     datePass.getMonth() + 1
                   }/${datePass.getFullYear()}`}</span>
                 </div>
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Heure :</span>
                   <span className="font-medium">{`${selectedTime}`}</span>
                 </div>
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Personnes :</span>
                   <span className="font-medium">{`${numberPerson}`}</span>
                 </div>
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Prénom :</span>
                   <span className="font-medium">{`${formData.firstName}`}</span>
                 </div>
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Nom :</span>
                   <span className="font-medium">{`${formData.lastName}`}</span>
                 </div>
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Téléphone :</span>
                   <span className="font-medium">{`${formData.phone}`}</span>
                 </div>
-                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_1 text-casa_9 text-[18px] leading-[20px] p-2">
                   <span>Email :</span>
                   <span className="font-medium">{`${formData.email}`}</span>
                 </div>
@@ -325,7 +323,7 @@ const ReservDayPass = () => {
       <div className="w-full flex justify-between items-center">
         <button
           type="button"
-          className={`px-3 py-1 bg-casa_6 text-white rounded ${
+          className={`px-3 py-1 bg-casa_9 text-white rounded ${
             activeTab === 1 || activeTab === 5 ? "hidden" : ""
           }`}
           onClick={() => handleChangeTabBack()}
@@ -334,7 +332,7 @@ const ReservDayPass = () => {
         </button>
         <button
           type="button"
-          className={`px-3 py-1 bg-casa_6 text-white rounded ml-auto disabled:bg-casa_5 ${
+          className={`px-3 py-1 bg-casa_9 text-white rounded ml-auto disabled:bg-casa_5 ${
             activeTab === 5 ? "hidden" : ""
           }`}
           onClick={() => handleChangeTabNext()}
