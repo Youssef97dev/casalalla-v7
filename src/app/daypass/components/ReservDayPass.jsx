@@ -168,7 +168,7 @@ const ReservDayPass = () => {
                 <p className="text-[16px] leading-[24px] mr-auto">
                   {`You are welcome to join us for a day pass with pool access included. We serve lunch between 1-4pm.`}
                 </p>
-                <div className="absolute top-1 right-1 border border-casa_9 text-casa_6 bg-white px-3 py-1 text-sm">
+                <div className="absolute top-1 right-1 border border-casa_9 text-casa_9 bg-white px-3 py-1 text-sm">
                   {selectedLunch ? "Selected" : "Select"}
                 </div>
               </div>
@@ -206,7 +206,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Prénom"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
                 />
                 <input
                   type="text"
@@ -216,7 +216,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Nom"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
                 />
               </div>
               <div className="w-full flex justify-center items-center gap-3">
@@ -228,7 +228,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
                 />
                 <input
                   type="tel"
@@ -238,7 +238,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="phone"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_3 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
                 />
               </div>
               <span className="text-[16px] text-casa_9 mr-auto  ">
@@ -332,7 +332,7 @@ const ReservDayPass = () => {
         </button>
         <button
           type="button"
-          className={`px-3 py-1 bg-casa_9 text-white rounded ml-auto disabled:bg-casa_5 ${
+          className={`px-3 py-1 bg-casa_9 text-white rounded ml-auto disabled:bg-casa_10 ${
             activeTab === 5 ? "hidden" : ""
           }`}
           onClick={() => handleChangeTabNext()}
