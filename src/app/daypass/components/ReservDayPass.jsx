@@ -30,20 +30,49 @@ const ReservDayPass = () => {
     lastName: "",
     email: "",
     phone: "",
+    commentaire: "",
   });
+  const [selectedLunch, setSelectedLunch] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleChangeTabNext = () => {
+    if (activeTab === 1) {
+      setActiveTab(2);
+    }
+    if (activeTab === 2) {
+      setActiveTab(3);
+    }
+    if (activeTab === 3) {
+      setActiveTab(4);
+    }
+    if (activeTab === 4) {
+      setActiveTab(5);
+    }
+  };
+
+  const handleChangeTabBack = () => {
+    if (activeTab === 4) {
+      setActiveTab(3);
+    }
+    if (activeTab === 3) {
+      setActiveTab(2);
+    }
+    if (activeTab === 2) {
+      setActiveTab(1);
+    }
+  };
+
   return (
-    <div className="w-full lg:w-[80%] flex flex-col justify-center items-center bg-white p-2">
+    <div className="w-full lg:w-[80%] flex flex-col justify-center items-center bg-white p-2 mx-5">
       <div className="w-full">
         <div className="w-full">
           {activeTab === 1 && (
             <div className="w-full flex flex-col justify-center items-center gap-3">
-              <div className="w-full flex flex-row justify-center items-center text-primary_11 gap-2">
+              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
                 <div className="w-fit flex flex-row justify-center items-center gap-1">
                   <FaCalendarAlt size={18} />
                   <span>{`${datePass.getDate()}/${
@@ -68,7 +97,7 @@ const ReservDayPass = () => {
                 <div className="w-full flex justify-center items-center">
                   <select
                     onChange={(e) => setNumberPerson(e.target.value)}
-                    className="w-full text-primary_11 px-3 py-3 rounded-l-md rounded-r-none bg-[#efe2bd] outline-none"
+                    className="w-full text-primary_11 px-3 py-[9px] rounded-l-md rounded-r-none bg-[#efe2bd] outline-none"
                   >
                     <option value="2"></option>
                     {numbers.map((value) => (
@@ -78,7 +107,7 @@ const ReservDayPass = () => {
                     ))}
                   </select>
                   <div className="bg-[#efe2bd] text-primary_11 flex justify-center items-center rounded-r-md py-2 px-3 border border-l-0 border-white-light">
-                    <IoPerson size={24} />
+                    <IoPerson size={23} />
                   </div>
                 </div>
               </div>
@@ -101,8 +130,8 @@ const ReservDayPass = () => {
                       </option>
                     ))}
                   </select>
-                  <div className="bg-[#efe2bd] text-primary_11 flex justify-center items-center rounded-r-md py-2 px-3 border border-l-0 border-white-light">
-                    <MdOutlineWatchLater size={25} />
+                  <div className="bg-[#efe2bd] text-primary_11 flex justify-center items-center rounded-r-md py-[9px] px-3 border border-l-0 border-white-light">
+                    <MdOutlineWatchLater size={27} />
                   </div>
                 </div>
               </div>
@@ -112,7 +141,7 @@ const ReservDayPass = () => {
         <div className="w-full">
           {activeTab === 2 && (
             <div className="w-full flex flex-col justify-center items-center gap-3">
-              <div className="w-full flex flex-row justify-center items-center text-primary_11 gap-2">
+              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
                 <div className="w-fit flex flex-row justify-center items-center gap-1">
                   <FaCalendarAlt size={18} />
                   <span>{`${datePass.getDate()}/${
@@ -130,7 +159,46 @@ const ReservDayPass = () => {
                   <span>{selectedTime}</span>
                 </div>
               </div>
-              <h1 className="text-[24px] leading-[26.4px] mr-auto text-primary_11">{`Détails Clients`}</h1>
+              <h1 className="text-[24px] leading-[26.4px]  text-casa_5 font-medium ">{`Une option est requise pour cette réservation.`}</h1>
+              <div
+                className={`relative w-full m-2 rounded border border-casa_7 p-3 flex flex-col gap-3 justify-center items-center text-casa_6 hover:bg-casa_6 hover:text-white ${
+                  selectedLunch && "bg-casa_6 text-white"
+                }`}
+                onClick={() => setSelectedLunch(!selectedLunch)}
+              >
+                <h1 className="text-[24px] leading-[26.4px] mr-auto">{`Reservation for 3 course lunch and day pass (.د.م600.00)`}</h1>
+                <p className="text-[16px] leading-[24px] mr-auto">
+                  {`You are welcome to join us for a day pass with pool access included. We serve lunch between 1-4pm.`}
+                </p>
+                <div className="absolute top-1 right-1 border border-casa_6 text-casa_6 bg-white px-3 py-1 text-sm">
+                  {selectedLunch ? "Selected" : "Select"}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="w-full">
+          {activeTab === 3 && (
+            <div className="w-full flex flex-col justify-center items-center gap-3">
+              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
+                <div className="w-fit flex flex-row justify-center items-center gap-1">
+                  <FaCalendarAlt size={18} />
+                  <span>{`${datePass.getDate()}/${
+                    datePass.getMonth() + 1
+                  }/${datePass.getFullYear()}`}</span>
+                  <span className="ml-2">|</span>
+                </div>
+                <div className="w-fit flex flex-row justify-center items-center gap-1">
+                  <IoPerson size={18} />
+                  <span>{numberPerson}</span>
+                  <span className="ml-2">|</span>
+                </div>
+                <div className="w-fit flex flex-row justify-center items-center gap-1">
+                  <MdOutlineWatchLater size={18} />
+                  <span>{selectedTime}</span>
+                </div>
+              </div>
+              <h1 className="text-[24px] leading-[26.4px] mr-auto text-casa_6">{`Détails Clients`}</h1>
               <div className="w-full flex justify-center items-center gap-3">
                 <input
                   type="text"
@@ -140,7 +208,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Prénom"
                   required
-                  className="w-full border border-primary_10 rounded placeholder:text-primary_10 p-2 focus:outline-none text-primary_11"
+                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
                 />
                 <input
                   type="text"
@@ -150,7 +218,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Nom"
                   required
-                  className="w-full border border-primary_10 rounded placeholder:text-primary_10 p-2 focus:outline-none text-primary_11"
+                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
                 />
               </div>
               <div className="w-full flex justify-center items-center gap-3">
@@ -162,7 +230,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="w-full border border-primary_10 rounded placeholder:text-primary_10 p-2 focus:outline-none text-primary_11"
+                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
                 />
                 <input
                   type="tel"
@@ -172,32 +240,117 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="phone"
                   required
-                  className="w-full border border-primary_10 rounded placeholder:text-primary_10 p-2 focus:outline-none text-primary_11"
+                  className="w-full border border-casa_6 rounded placeholder:text-casa_4 p-2 focus:outline-none text-casa_6"
                 />
+              </div>
+              <span className="text-[16px] text-casa_6 mr-auto  ">
+                Commentaire
+              </span>
+              <textarea
+                id="commentaire"
+                name="commentaire"
+                value={formData.commentaire}
+                rows={4}
+                onChange={handleChange}
+                className="w-full border border-casa_6 rounded focus:outline-none text-casa_6 p-3"
+              />
+            </div>
+          )}
+        </div>
+        <div className="w-full">
+          {activeTab === 4 && (
+            <div className="w-full flex flex-col justify-center items-center gap-3">
+              <div className="w-full flex flex-row justify-center items-center text-casa_6 gap-2">
+                <div className="w-fit flex flex-row justify-center items-center gap-1">
+                  <FaCalendarAlt size={18} />
+                  <span>{`${datePass.getDate()}/${
+                    datePass.getMonth() + 1
+                  }/${datePass.getFullYear()}`}</span>
+                  <span className="ml-2">|</span>
+                </div>
+                <div className="w-fit flex flex-row justify-center items-center gap-1">
+                  <IoPerson size={18} />
+                  <span>{numberPerson}</span>
+                  <span className="ml-2">|</span>
+                </div>
+                <div className="w-fit flex flex-row justify-center items-center gap-1">
+                  <MdOutlineWatchLater size={18} />
+                  <span>{selectedTime}</span>
+                </div>
+              </div>
+              <h1 className="text-[24px] leading-[26.4px] mr-auto text-casa_6">{`Merci de vérifier vos informations`}</h1>
+              <div className="w-full flex flex-col justify-center items-center gap-1">
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Date :</span>
+                  <span className="font-medium">{`${datePass.getDate()}/${
+                    datePass.getMonth() + 1
+                  }/${datePass.getFullYear()}`}</span>
+                </div>
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Heure :</span>
+                  <span className="font-medium">{`${selectedTime}`}</span>
+                </div>
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Personnes :</span>
+                  <span className="font-medium">{`${numberPerson}`}</span>
+                </div>
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Prénom :</span>
+                  <span className="font-medium">{`${formData.firstName}`}</span>
+                </div>
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Nom :</span>
+                  <span className="font-medium">{`${formData.lastName}`}</span>
+                </div>
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Téléphone :</span>
+                  <span className="font-medium">{`${formData.phone}`}</span>
+                </div>
+                <div className="w-full flex justify-between items-center gap-10 border-t border-casa_3 text-casa_6 text-[18px] leading-[20px] p-2">
+                  <span>Email :</span>
+                  <span className="font-medium">{`${formData.email}`}</span>
+                </div>
               </div>
             </div>
           )}
         </div>
-        <div className="mb-5">
-          {activeTab === 3 && "Wonderful transition effects."}
+        <div className="w-full mb-5">
+          {activeTab === 5 && (
+            <div className="text-[24px] leading-[26.4px] mr-auto text-casa_8">
+              {"Votre résérvation a été envoyé"}
+            </div>
+          )}
         </div>
       </div>
       <div className="w-full flex justify-between items-center">
         <button
           type="button"
-          className={`px-3 py-1 bg-primary_11 text-white rounded ${
-            activeTab === 1 ? "hidden" : ""
+          className={`px-3 py-1 bg-casa_6 text-white rounded ${
+            activeTab === 1 || activeTab === 5 ? "hidden" : ""
           }`}
-          onClick={() => setActiveTab(activeTab === 3 ? 2 : 1)}
+          onClick={() => handleChangeTabBack()}
         >
           Précédent
         </button>
         <button
           type="button"
-          className="px-3 py-1 bg-casa_6 text-white rounded ml-auto"
-          onClick={() => setActiveTab(activeTab === 1 ? 2 : 3)}
+          className={`px-3 py-1 bg-casa_6 text-white rounded ml-auto disabled:bg-casa_5 ${
+            activeTab === 5 ? "hidden" : ""
+          }`}
+          onClick={() => handleChangeTabNext()}
+          disabled={
+            (activeTab === 1 &&
+              (selectedTime === "Aucune heure sélectionnée" ||
+                numberPerson < 3)) ||
+            (activeTab === 2 && !selectedLunch) ||
+            (activeTab === 3 &&
+              (formData.firstName === "" ||
+                formData.lastName === "" ||
+                formData.email === "" ||
+                formData.phone === ""))
+          }
         >
-          {activeTab === 3 ? "Finish" : "Suivant"}
+          {activeTab === 4 ? "Résérver" : "Suivant"}
         </button>
       </div>
     </div>
