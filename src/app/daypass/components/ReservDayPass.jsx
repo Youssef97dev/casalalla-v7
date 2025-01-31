@@ -206,7 +206,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Prénom"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded  p-2 focus:outline-none text-casa_9"
                 />
                 <input
                   type="text"
@@ -216,7 +216,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Nom"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded  p-2 focus:outline-none text-casa_9"
                 />
               </div>
               <div className="w-full flex justify-center items-center gap-3">
@@ -228,7 +228,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded  p-2 focus:outline-none text-casa_9"
                 />
                 <input
                   type="tel"
@@ -238,7 +238,7 @@ const ReservDayPass = () => {
                   onChange={handleChange}
                   placeholder="phone"
                   required
-                  className="w-full border border-casa_9 rounded placeholder:text-casa_10 p-2 focus:outline-none text-casa_9"
+                  className="w-full border border-casa_9 rounded p-2 focus:outline-none text-casa_9"
                 />
               </div>
               <span className="text-[16px] text-casa_9 mr-auto  ">
