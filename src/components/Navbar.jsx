@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed left-0 top-0 z-20 w-full flex flex-row justify-between items-center uppercase px-4 lg:px-10 border-b border-casa_5 bg-casa_2">
-        <ul className="w-full lg:flex justify-start items-center gap-8 text-[13.5px] leading-[20.25px] text-casa_6 hidden">
+        <ul className="w-full lg:flex justify-start items-center gap-7 text-[13.5px] leading-[20.25px] text-casa_6 hidden">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -21,11 +21,32 @@ const Navbar = () => {
           <li>
             <Link href="/daypass">Day pass</Link>
           </li>
-          <li>
-            <Link href="/events">Events</Link>
+          <li className="relative group cursor-pointer">
+            <span>Events</span>
+            <ul className="absolute top-3 -left-5 hidden group-hover:block bg-casa_2 shadow-lg mt-2">
+              <li>
+                <Link
+                  href="/events"
+                  className="block px-4 py-2 text-casa_6 hover:bg-casa_1"
+                >
+                  Programming
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/wedding"
+                  className="block px-4 py-2 text-casa_6 hover:bg-casa_1"
+                >
+                  Wedding
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
-            <Link href="/wedding">Wedding</Link>
+            <Link href="#">Activities</Link>
+          </li>
+          <li>
+            <Link href="#">Gallery</Link>
           </li>
           <li>
             <Link href="/contact-us">Contact</Link>
@@ -76,7 +97,7 @@ const Navbar = () => {
         leaveTo="transform translate-x-full opacity-0"
       >
         <div className="fixed top-10 right-0 z-10 w-full h-screen bg-casa_2 flex flex-col items-center justify-between">
-          <ul className="space-y-5 text-center text-casa_6 leading-[27.88px] text-[30px] mt-44">
+          <ul className="space-y-5 text-center text-casa_6 leading-[27.88px] text-[30px] mt-28">
             <li>
               <Link href="/">HOME</Link>
             </li>
@@ -87,10 +108,16 @@ const Navbar = () => {
               <Link href="/daypass">DAY PASS</Link>
             </li>
             <li>
-              <Link href="/events">EVENTS</Link>
+              <Link href="/events">PROGRAMMING</Link>
             </li>
             <li>
               <Link href="/wedding">WEDDING</Link>
+            </li>
+            <li>
+              <Link href="#">ACTIVITIES</Link>
+            </li>
+            <li>
+              <Link href="#">GALLERY</Link>
             </li>
             <li>
               <Link href="/contact-us">CONTACT</Link>
