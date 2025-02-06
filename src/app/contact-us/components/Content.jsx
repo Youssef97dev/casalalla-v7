@@ -7,7 +7,7 @@ const Content = () => {
       <p className="text-[17px] leading-[22.5px]">{`For gatherings, special celebrations, photo-shoots or more information about us please send us a message by using the contact form below`}</p>
       <div className="flex justify-center items-center gap-2">
         <span>To email us :</span>
-        <Link href="#">{`reservation@casalallatakekoust.com`}</Link>
+        <Link href="#">{`reservations@casalallatakekoust.com`}</Link>
       </div>
       <div className="flex justify-center items-center gap-2">
         <span>Tel :</span>
