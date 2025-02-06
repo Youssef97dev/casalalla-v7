@@ -20,9 +20,9 @@ const ActivitiesContent = () => {
         <Accordion />
         <Link
           href="/contact-us"
-          className="bg-casa_4 hover:bg-casa_3 text-white px-10 py-5 text-xs mt-5"
+          className="bg-casa_4 hover:bg-casa_3 text-white px-10 py-5 mt-5"
         >
-          Book an Experiebce
+          Book an Experience
         </Link>
       </div>
     </div>
