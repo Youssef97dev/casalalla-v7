@@ -45,9 +45,7 @@ const Navbar = () => {
           <li>
             <Link href="/activities">Activities</Link>
           </li>
-          <li>
-            <Link href="/gallery">Gallery</Link>
-          </li>
+
           <li>
             <Link href="/contact-us">Contact</Link>
           </li>
@@ -60,7 +58,20 @@ const Navbar = () => {
             className="cursor-pointer w-28 h-28 lg:w-36 lg:h-36"
           />
         </div>
-        <div className="w-full flex justify-end items-center">
+        <div className="w-full flex justify-end items-center gap-7">
+          <Link
+            href="/gallery"
+            className="text-[13.5px] leading-[20.25px] text-casa_6 hidden lg:block"
+          >
+            Gallery
+          </Link>
+          <Link
+            href="#"
+            className="text-[13.5px] leading-[20.25px] text-casa_6 hidden lg:block"
+          >
+            Menu
+          </Link>
+
           <Link
             href="/booking"
             className="bg-casa_5 hover:bg-casa_6 text-white px-10 py-5 text-xs hidden lg:block"
