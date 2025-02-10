@@ -57,6 +57,17 @@ const events = [
     para_2: "800.00dhs per person",
     book: true,
   },
+  {
+    id: 5,
+    img_src:
+      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,g_south,h_4160,w_2774/casalalla-v2/lhb2mbtjxmjl5p8jxycr",
+    title: "New Year Brunch",
+    date_: "Wednesday 1st Junuary",
+    para_1:
+      "If you like to ease your way into the New Year a recovery Bloody Mary or if you prefer to start the new year with a bang on the 1st, our annual New Year Day Brunch is ideal for all. Last year we danced through the sunset and we intend to have another great day to start 2025.",
+    para_2: "800.00dhs per person",
+    book: true,
+  },
 ];
 
 const Upcoming = () => {
