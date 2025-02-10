@@ -20,11 +20,15 @@ const Footer = () => {
               <Link href="/booking">Reservation</Link>
             </li>
           </ul>
-          <div className="w-full flex flex-col justify-center items-center text-center underline">
+          <Link
+            target="_blank"
+            href="https://www.google.com/maps/dir//casa+lalla+takerkoust/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xdafef4fcbd919cb:0x89922e232011bf59?sa=X&ved=1t:3061&ictx=111"
+            className="w-full flex flex-col justify-center items-center text-center underline"
+          >
             <span>{`Lalla Takerkoust,`}</span>
             <span>{`Marrakech 40000`}</span>
             <span>Morocco</span>
-          </div>
+          </Link>
         </div>
         <div className="w-full flex justify-center items-start order-1 lg:order-2">
           <Image
