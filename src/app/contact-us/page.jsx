@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Content from "./components/Content";
 import FormMessage from "./components/FormMessage";
+import Mapbox from "./components/Mapbox";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       <Navbar />
       <Content />
       <FormMessage />
+      <Mapbox />
       <Footer />
     </div>
   );

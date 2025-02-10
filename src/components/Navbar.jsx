@@ -72,7 +72,13 @@ const Navbar = () => {
           >
             Menu
           </Link>
-
+          <Link
+            href="https://www.google.com/maps/dir//casa+lalla+takerkoust/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xdafef4fcbd919cb:0x89922e232011bf59?sa=X&ved=1t:3061&ictx=111"
+            target="_blank"
+            className="text-[13.5px] leading-[20.25px] text-casa_6 hidden lg:block"
+          >
+            Location
+          </Link>
           <Link
             href="/booking"
             className="bg-casa_5 hover:bg-casa_6 text-white px-10 py-5 text-xs hidden lg:block"
@@ -134,6 +140,14 @@ const Navbar = () => {
             <li>
               <Link href="/menu-en.pdf" target="_blank">
                 Menu
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.google.com/maps/dir//casa+lalla+takerkoust/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xdafef4fcbd919cb:0x89922e232011bf59?sa=X&ved=1t:3061&ictx=111"
+                target="_blank"
+              >
+                Location
               </Link>
             </li>
             <li>
