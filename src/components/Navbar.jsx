@@ -66,7 +66,7 @@ const Navbar = () => {
             Gallery
           </Link>
           <Link
-            href="#"
+            href="/menu-en.pdf"
             className="text-[13.5px] leading-[20.25px] text-casa_6 hidden lg:block"
           >
             Menu
@@ -129,6 +129,9 @@ const Navbar = () => {
             </li>
             <li>
               <Link href="/gallery">GALLERY</Link>
+            </li>
+            <li>
+              <Link href="/menu-en.pdf">Menu</Link>
             </li>
             <li>
               <Link href="/contact-us">CONTACT</Link>
