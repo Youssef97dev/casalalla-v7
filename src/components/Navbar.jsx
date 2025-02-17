@@ -5,31 +5,33 @@ import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Transition } from "@headlessui/react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
   return (
     <>
       <nav className="fixed left-0 top-0 z-20 w-full flex flex-row justify-between items-center uppercase px-4 lg:px-10 border-b border-casa_5 bg-casa_2">
         <ul className="w-full lg:flex justify-start items-center gap-7 text-[13.5px] leading-[20.25px] text-casa_6 hidden">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">{t("menu.home")}</Link>
           </li>
           <li>
-            <Link href="/">About</Link>
+            <Link href="/">{t("menu.about")}</Link>
           </li>
           <li>
             <Link href="/daypass">Day pass</Link>
           </li>
           <li className="relative group cursor-pointer">
-            <span>Events</span>
+            <span>{t("menu.events")}</span>
             <ul className="absolute top-3 -left-5 hidden group-hover:block bg-casa_2 shadow-lg mt-2">
               <li>
                 <Link
                   href="/events"
                   className="block px-4 py-2 text-casa_6 hover:bg-casa_1"
                 >
-                  Programming
+                  {t("menu.programming")}
                 </Link>
               </li>
               <li>
@@ -37,13 +39,13 @@ const Navbar = () => {
                   href="/wedding"
                   className="block px-4 py-2 text-casa_6 hover:bg-casa_1"
                 >
-                  Wedding
+                  {t("menu.wedding")}
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link href="/activities">Activities</Link>
+            <Link href="/activities">{t("menu.activities")}</Link>
           </li>
 
           <li>
@@ -63,7 +65,7 @@ const Navbar = () => {
             href="/gallery"
             className="text-[13.5px] leading-[20.25px] text-casa_6 hidden lg:block"
           >
-            Gallery
+            {t("menu.gallery")}
           </Link>
           <Link
             href="/menu-en.pdf"
@@ -76,7 +78,7 @@ const Navbar = () => {
             href="/booking"
             className="bg-casa_5 hover:bg-casa_6 text-white px-10 py-5 text-xs hidden lg:block"
           >
-            Book Now
+            {t("menu.book")}
           </Link>
           <div
             className="text-primary_11 block lg:hidden  transition-transform duration-500"
@@ -108,27 +110,27 @@ const Navbar = () => {
         leaveTo="transform translate-x-full opacity-0"
       >
         <div className="fixed top-10 right-0 z-10 w-full h-screen bg-casa_2 flex flex-col items-center justify-between">
-          <ul className="space-y-5 text-center text-casa_6 leading-[27.88px] text-[30px] mt-28">
+          <ul className="space-y-5 text-center text-casa_6 leading-[27.88px] text-[30px] mt-28 uppercase">
             <li>
-              <Link href="/">HOME</Link>
+              <Link href="/">{t("menu.home")}</Link>
             </li>
             <li>
-              <Link href="/">ABOUT</Link>
+              <Link href="/">{t("menu.about")}</Link>
             </li>
             <li>
               <Link href="/daypass">DAY PASS</Link>
             </li>
             <li>
-              <Link href="/events">PROGRAMMING</Link>
+              <Link href="/events">{t("menu.programming")}</Link>
             </li>
             <li>
-              <Link href="/wedding">WEDDING</Link>
+              <Link href="/wedding">{t("menu.wedding")}</Link>
             </li>
             <li>
-              <Link href="/activities">ACTIVITIES</Link>
+              <Link href="/activities">{t("menu.activities")}</Link>
             </li>
             <li>
-              <Link href="/gallery">GALLERY</Link>
+              <Link href="/gallery">{t("menu.gallery")}</Link>
             </li>
             <li>
               <Link href="/menu-en.pdf" target="_blank">
@@ -143,7 +145,7 @@ const Navbar = () => {
             href="/booking"
             className="bg-casa_6 fixed bottom-14 text-white px-7 py-4 text-[18px] font-medium"
           >
-            Book Now
+            {t("menu.book")}
           </Link>
         </div>
       </Transition>

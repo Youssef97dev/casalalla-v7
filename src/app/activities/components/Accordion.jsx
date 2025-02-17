@@ -2,9 +2,12 @@
 import AnimateHeight from "react-animate-height";
 import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const Accordion = () => {
   const [active, setActive] = useState("1");
+  const { t } = useTranslation();
+
   const togglePara = (value) => {
     setActive((oldValue) => {
       return oldValue === value ? "" : value;
@@ -19,7 +22,7 @@ const Accordion = () => {
             className={`py-4 w-full flex items-center text-white-dark text-[15px] uppercase`}
             onClick={() => togglePara("1")}
           >
-            {`Transportation`}
+            {t("activities.title_1")}
             <div className={`ml-auto`}>
               {active === "1" ? (
                 <AiOutlineMinus size={28} />
@@ -31,7 +34,7 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "1" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
-                <p>Lalla Takerkoust can be reached via taxi or bus.</p>
+                <p>{t("activities.trans_desc")}</p>
               </div>
             </AnimateHeight>
           </div>
@@ -55,24 +58,19 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "2" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
+                <p>{t("activities.quad_desc")}</p>
                 <p>
-                  Satisfy your need for speed and adventure with a quad tour
-                  around Lalla Takerkoust and take in breathtaking landscapes.
-                  Experienced guides will take you off the beaten path at the
-                  foothills of the High Atlas Mountains.
-                </p>
-                <p>
-                  {"Quad Simple 1 Hour 300dh"}
+                  {t("activities.quad_desc_1")}
                   <br />
-                  {`Quad Double 1 Hour 500dh`}
+                  {t("activities.quad_desc_2")}
                   <br />
-                  {`Quad Simple 2 Hours 500dh`}
+                  {t("activities.quad_desc_3")}
                   <br />
-                  {`Quad Double 2 Hours 800dh`}
+                  {t("activities.quad_desc_4")}
                   <br />
-                  {`Buggy 2 Places 1 Hour 800dh`}
+                  {t("activities.quad_desc_5")}
                   <br />
-                  {`Buggy 2 Places 2 Hours 1400dh`}
+                  {t("activities.quad_desc_6")}
                 </p>
               </div>
             </AnimateHeight>
@@ -97,12 +95,8 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "3" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
-                <p>
-                  Get your heart racing with a jet ski adventure as you glide
-                  across the scenic Lalla Takerkoust lake and enjoy stunning
-                  views of the snow-capped High Atlas Mountains.
-                </p>
-                <p>400dh for 15 Minutes</p>
+                <p>{t("activities.jetski_desc")}</p>
+                <p>{t("activities.jetski_desc_1")}</p>
               </div>
             </AnimateHeight>
           </div>
@@ -114,7 +108,7 @@ const Accordion = () => {
             className={`py-4 w-full flex items-center text-white-dark text-[15px] uppercase`}
             onClick={() => togglePara("4")}
           >
-            {`Nature Walk / Hike`}
+            {t("activities.title_4")}
             <div className={`ml-auto`}>
               {active === "4" ? (
                 <AiOutlineMinus size={28} />
@@ -126,15 +120,7 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "4" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
-                <p>
-                  Explore the serene waters of Lalla Takerkoust by foot with an
-                  expert guide and discover the vibrant flora and fauna that is
-                  found in this diverse landscape. Choose from a leisurely
-                  nature walk or venture into the surrounding hillsides for a
-                  more rigorous hike. Perfect for birdwatches and photography
-                  enthusiasts, this tranquil environment promises a respite from
-                  the hustle and bustle of Marrakech life.
-                </p>
+                <p>{t("activities.hike_desc")}</p>
               </div>
             </AnimateHeight>
           </div>
@@ -146,7 +132,7 @@ const Accordion = () => {
             className={`py-4 w-full flex items-center text-white-dark text-[13.5px] uppercase`}
             onClick={() => togglePara("5")}
           >
-            {`Horseback Riding`}
+            {t("activities.title_5")}
             <div className={`ml-auto`}>
               {active === "5" ? (
                 <AiOutlineMinus size={28} />
@@ -158,13 +144,7 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "5" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
-                <p>
-                  Experience the magic of horseback riding around the sparkling
-                  Lalla Takerkoust lake and discover diverse landscapes as you
-                  journey off the beaten path around the lake, the foothills of
-                  the High Atlas mountains and the neighboring stone desert of
-                  Agafay.
-                </p>
+                <p>{t("activities.riding_desc")}</p>
               </div>
             </AnimateHeight>
           </div>
@@ -176,7 +156,7 @@ const Accordion = () => {
             className={`py-4 w-full flex items-center text-white-dark text-[13.5px] uppercase`}
             onClick={() => togglePara("6")}
           >
-            {`Agafay Desert`}
+            {t("activities.title_6")}
             <div className={`ml-auto`}>
               {active === "6" ? (
                 <AiOutlineMinus size={28} />
@@ -188,16 +168,8 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "6" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
-                <p>
-                  Discover the rocky desert of Agafay and find out why it’s one
-                  of the Morocco’s favorite playgrounds. Live out your Dune
-                  desert dreams and explore by quad, buggy or camel.
-                </p>
-                <p>
-                  There is no shortage of activities to enjoy when visiting the
-                  neighboring Agafay Desert, only 5 minutes away from Lalla
-                  Takerkoust.
-                </p>
+                <p>{t("activities.agafay_desc_1")}</p>
+                <p>{t("activities.agafay_desc_2")}</p>
               </div>
             </AnimateHeight>
           </div>
@@ -209,7 +181,7 @@ const Accordion = () => {
             className={`py-4 w-full flex items-center text-white-dark text-[13.5px] uppercase`}
             onClick={() => togglePara("7")}
           >
-            {`Bike Tour`}
+            {t("activities.title_7")}
             <div className={`ml-auto`}>
               {active === "7" ? (
                 <AiOutlineMinus size={28} />
@@ -221,13 +193,7 @@ const Accordion = () => {
           <div>
             <AnimateHeight duration={300} height={active === "7" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-white-dark text-[16px] border-t border-[#d3d3d3]">
-                <p>
-                  Explore Lalla Takerkoust on an invigorating bike ride through
-                  the Agafay Desert and then arrive at the oasis that is the
-                  crystal-clear waters of Lalla Takerkoust lake and the
-                  surrounding snow-capped High Atlas Mountains. Get ready for a
-                  timeless ride that is sure to provide unforgettable memories!
-                </p>
+                <p>{t("activities.bike_desc")}</p>
               </div>
             </AnimateHeight>
           </div>

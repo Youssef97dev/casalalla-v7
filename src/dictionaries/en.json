@@ -1,0 +1,46 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "events": "Events",
+    "book": "Book Now",
+    "activities": "Activities",
+    "programming": "Programming",
+    "wedding": "Wedding"
+  },
+  "home": {
+    "title": "Casa Lalla Takerkoust Restaurant is a unique dining destination located in the scenic area of Barrage Lalla Takerkoust.",
+    "description_1": "The deep rooted connection to nature in every aspect of the experience, make staying at this luxury restaurant heaven.",
+    "description_2": "The dining spaces enjoy stunning terraces and glamorous pergolas. The indoor areas with sumptuous authentic rustic décor also provide the perfect way to enjoy the taste of the estate. Mediterranean inspired dishes created with ingredients almost locally sourced.",
+    "description_3": "With sensational golden light views of the estate and the Lake beyond, the romance of the nature is your backdrop.",
+    "title_2": "The Property",
+    "description_4": "The restaurant Casa Lalla Takerkoust  is a destination in itself. The menus fuse global gastronomy with local, organic ingredients. Holidaymakers alike are invited to take a seat on the bright, airy terrace for lunch, soaking up the magical Mediterranean ambience and those spectacular Takerkoust Lake. Lunchs relax to a soundtrack of live artists and DJs playing chillout music with a world influence twist while sipping on cocktails served from the  bar.",
+    "description_5": "Casa Lalla Takerkoust is the most prestigious rural restaurant in Marrakech, Lake Lalla Takerkoust region.",
+    "description_6": "The estate with sprawling beautiful manicured restaurant & terrace is like a slow meandering village."
+  },
+  "activities": {
+    "title": "Experience",
+    "title_1": "Transportation",
+    "title_4": "Nature Walk / Hike",
+    "title_5": "Horseback Riding",
+    "title_6": "Agafay Desert",
+    "title_7": "Bike Tour",
+    "trans_desc": "Lalla Takerkoust can be reached via taxi or bus.",
+    "quad_desc": "Satisfy your need for speed and adventure with a quad tour around Lalla Takerkoust and take in breathtaking landscapes. Experienced guides will take you off the beaten path at the foothills of the High Atlas Mountains.",
+    "quad_desc_1": "Quad Simple 1 Hour 300dh",
+    "quad_desc_2": "Quad Double 1 Hour 500dh",
+    "quad_desc_3": "Quad Simple 2 Hours 500dh",
+    "quad_desc_4": "Quad Double 2 Hours 800dh",
+    "quad_desc_5": "Buggy 2 Places 1 Hour 800dh",
+    "quad_desc_6": "Buggy 2 Places 2 Hours 1400dh",
+    "jetski_desc": "Get your heart racing with a jet ski adventure as you glide across the scenic Lalla Takerkoust lake and enjoy stunning views of the snow-capped High Atlas Mountains.",
+    "jetski_desc_1": "400dh for 15 Minutes",
+    "hike_desc": "Explore the serene waters of Lalla Takerkoust by foot with an expert guide and discover the vibrant flora and fauna that is found in this diverse landscape. Choose from a leisurely nature walk or venture into the surrounding hillsides for a more rigorous hike. Perfect for birdwatches and photography enthusiasts, this tranquil environment promises a respite from the hustle and bustle of Marrakech life.",
+    "riding_desc": "Experience the magic of horseback riding around the sparkling Lalla Takerkoust lake and discover diverse landscapes as you journey off the beaten path around the lake, the foothills of the High Atlas mountains and the neighboring stone desert of Agafay.",
+    "agafay_desc_1": "Discover the rocky desert of Agafay and find out why it’s one of the Morocco’s favorite playgrounds. Live out your Dune desert dreams and explore by quad, buggy or camel.",
+    "agafay_desc_2": "There is no shortage of activities to enjoy when visiting the neighboring Agafay Desert, only 5 minutes away from Lalla Takerkoust.",
+    "bike_desc": "Explore Lalla Takerkoust on an invigorating bike ride through the Agafay Desert and then arrive at the oasis that is the crystal-clear waters of Lalla Takerkoust lake and the surrounding snow-capped High Atlas Mountains. Get ready for a timeless ride that is sure to provide unforgettable memories!",
+    "book_experience": "Book an Experience"
+  }
+}
