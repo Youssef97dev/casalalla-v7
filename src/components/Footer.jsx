@@ -31,9 +31,9 @@ const Footer = () => {
               <li>
                 <Link href="https://casalallatakerkoust.com/about/">About</Link>
               </li>
-              <li>
+              {/*<li>
                 <Link href="#">Day pass</Link>
-              </li>
+    </li>*/}
               <li>
                 <Link href="/booking">Reservation</Link>
               </li>
