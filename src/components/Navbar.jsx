@@ -20,9 +20,9 @@ const Navbar = () => {
           <li>
             <Link href="/">{t("menu.about")}</Link>
           </li>
-          <li>
+          {/*<li>
             <Link href="/daypass">Day pass</Link>
-          </li>
+  </li>*/}
           <li className="relative group cursor-pointer">
             <span>{t("menu.events")}</span>
             <ul className="absolute top-3 -left-5 hidden group-hover:block bg-casa_2 shadow-lg mt-2">
@@ -117,9 +117,9 @@ const Navbar = () => {
             <li>
               <Link href="/">{t("menu.about")}</Link>
             </li>
-            <li>
+            {/*<li>
               <Link href="/daypass">DAY PASS</Link>
-            </li>
+            </li>*/}
             <li>
               <Link href="/events">{t("menu.programming")}</Link>
             </li>
