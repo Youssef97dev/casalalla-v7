@@ -60,5 +60,10 @@
     "subtitle_3": "From intimate rooftop concerts staged at sunset, to private, site-specific installations guided by artists, and nocturnal Celtic-ancestry-informed ceremonies, the dynamic year-round programme activates the property like an experiential canvas.",
     "upcoming": "Upcoming Events",
     "book": "Book"
+  },
+  "wedding": {
+    "title": "Weddings",
+    "intro": "Celebrate your special day by a ceremony surrounded by nature in our olive groves with views on the mountains. Feast on a farm to fork supper and dance the night away under the stars.",
+    "button": "Book Your Wedding"
   }
 }

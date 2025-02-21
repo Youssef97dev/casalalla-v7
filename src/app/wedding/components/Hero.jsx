@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative w-full h-full lg:h-[120vh] flex justify-center items-center">
       <Image
@@ -17,7 +20,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-casa_1 opacity-10"></div>
       <div className="absolute w-full h-full flex justify-center top-60 text-white lg:text-[78px] lg:leading-[90px] text-[53.11px] leading-[61.86px]">
-        WEDDINGS
+        {t("wedding.title")}
       </div>
     </div>
   );

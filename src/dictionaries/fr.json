@@ -60,5 +60,10 @@
     "subtitle_3": "Des concerts intimes sur les toits au coucher du soleil aux installations privées spécifiques guidées par des artistes, en passant par les cérémonies nocturnes inspirées de la tradition celtique, le programme dynamique mis en place tout au long de l'année active la propriété comme une toile expérimentale.",
     "upcoming": "Événements à venir",
     "book": "Réserver"
+  },
+  "wedding": {
+    "title": "Mariages",
+    "intro": "Célébrez votre journée spéciale par une cérémonie entourée de nature dans nos oliveraies avec vue sur les montagnes. Régalez-vous d'un dîner de la ferme à la table et dansez toute la nuit sous les étoiles.",
+    "button": "Réservez votre mariage"
   }
 }

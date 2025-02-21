@@ -1,9 +1,13 @@
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Hero from "./components/Hero";
-import BookWedding from "./components/BookWedding";
 import MenuWedding from "./components/MenuWedding";
 import Gallery from "./components/Gallery";
+
+const Hero = dynamic(() => import("./components/Hero"), { ssr: false });
+const BookWedding = dynamic(() => import("./components/BookWedding"), {
+  ssr: false,
+});
 
 const page = () => {
   return (
