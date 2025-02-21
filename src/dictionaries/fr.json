@@ -42,5 +42,15 @@
     "agafay_desc_2": "Les activités ne manquent pas dans le désert d'Agafay, situé à seulement 5 minutes de Lalla Takerkoust.",
     "bike_desc": "Explorez Lalla Takerkoust lors d'une randonnée à vélo revigorante à travers le désert d'Agafay, puis arrivez à l'oasis que constituent les eaux cristallines du lac Lalla Takerkoust et les montagnes enneigées du Haut Atlas qui l'entourent. Préparez-vous à une randonnée hors du temps qui vous laissera des souvenirs inoubliables !",
     "book_experience": "Réserver une expérience"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Pour les rassemblements, les célébrations spéciales, les séances photos ou pour plus d'informations sur nous, veuillez nous envoyer un message en utilisant le formulaire de contact ci-dessous.",
+    "span": "Pour nous envoyer un courriel :",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "email": "E-mail",
+    "subject": "Sujet",
+    "submit": "Envoyer"
   }
 }

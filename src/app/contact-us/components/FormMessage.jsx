@@ -1,11 +1,13 @@
-import React from "react";
+"use client";
+import { useTranslation } from "react-i18next";
 
 const FormMessage = () => {
+  const { t } = useTranslation();
   return (
     <form className="w-full flex flex-col justify-center items-center gap-4 text-[15.08px] leading-[21.12px] text-casa_7 my-20 px-5 lg:px-80">
       <div className="w-full flex justify-center items-center gap-3">
         <div className="w-full flex flex-col justify-center items-start gap-1">
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">{t("contact.firstname")}</label>
           <input
             type="text"
             name="firstName"
@@ -14,7 +16,7 @@ const FormMessage = () => {
           />
         </div>
         <div className="w-full flex flex-col justify-center items-start gap-1">
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastName">{t("contact.lastname")}</label>
           <input
             type="text"
             name="lastName"
@@ -24,7 +26,7 @@ const FormMessage = () => {
         </div>
       </div>
       <div className="w-full flex flex-col justify-center items-start gap-1">
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">{t("contact.email")}</label>
         <input
           type="text"
           name="email"
@@ -33,7 +35,7 @@ const FormMessage = () => {
         />
       </div>
       <div className="w-full flex flex-col justify-center items-start gap-1">
-        <label htmlFor="subject">Subject</label>
+        <label htmlFor="subject">{t("contact.subject")}</label>
         <input
           type="text"
           name="subject"
@@ -50,7 +52,9 @@ const FormMessage = () => {
           rows={4}
         />
       </div>
-      <button className="py-4 px-6 border border-casa_7 mr-auto">SUBMIT</button>
+      <button className="py-4 px-6 border border-casa_7 mr-auto uppercase">
+        {t("contact.submit")}
+      </button>
     </form>
   );
 };
