@@ -1,8 +1,13 @@
 import Navbar from "@/components/Navbar";
-import Hero from "./components/Hero";
-import ActivitiesContent from "./components/ActivitiesContent";
-import Gallery from "./components/Gallery";
-import Footer from "@/components/Footer";
+
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("./components/Hero"), { ssr: false });
+const ActivitiesContent = dynamic(
+  () => import("./components/ActivitiesContent"),
+  { ssr: false }
+);
+const Gallery = dynamic(() => import("./components/Gallery"), { ssr: false });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
 const page = () => {
   return (
