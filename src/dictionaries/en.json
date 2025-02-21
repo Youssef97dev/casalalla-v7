@@ -52,5 +52,13 @@
     "email": "Email",
     "subject": "Subject",
     "submit": "Submit"
+  },
+  "events": {
+    "title": "Programming",
+    "subtitle_1": "Expanding upon the idea of a cabinet of curiosities, the Casa lalla takerkoust becomes a resoundingly ‘live space.’ The carefully curated, ever-evolving programme places fun and inspiration at the forefront, showcasing music, art, design, and ceremony to spark ongoing cultural encounters and conversations.",
+    "subtitle_2": "A natural evolution from the founders’ two decades of experience and expertise helming Boutique Souk, this more permanent footing in Marrakech’s outlying countryside sets the scene for more profound expressions of creative hospitality.",
+    "subtitle_3": "From intimate rooftop concerts staged at sunset, to private, site-specific installations guided by artists, and nocturnal Celtic-ancestry-informed ceremonies, the dynamic year-round programme activates the property like an experiential canvas.",
+    "upcoming": "Upcoming Events",
+    "book": "Book"
   }
 }

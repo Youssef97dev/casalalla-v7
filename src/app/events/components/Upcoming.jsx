@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 // Import Swiper styles
 import "swiper/css";
@@ -71,10 +72,11 @@ const events = [
 ];
 
 const Upcoming = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex flex-col justify-start items-center mt-8 gap-3 text-casa_8 px-2">
       <h1 className="mb-5 text-[34.548px] leading-[42.5631px] lg:text-[60px] lg:leading-[73.92px]">
-        Upcoming Events
+        {t("events.upcoming")}
       </h1>
       <div className="w-full h-full block lg:hidden">
         <Swiper
@@ -109,9 +111,9 @@ const Upcoming = () => {
                   {event.book && (
                     <Link
                       href="#"
-                      className="bg-casa_8 text-white px-12 py-5 text-[18px] font-medium mt-3"
+                      className="bg-casa_8 text-white px-12 py-5 text-[18px] font-medium mt-3 uppercase"
                     >
-                      BOOK
+                      {t("events.book")}
                     </Link>
                   )}
                 </div>
@@ -154,9 +156,9 @@ const Upcoming = () => {
                   {event.book && (
                     <Link
                       href="/booking"
-                      className="bg-casa_8 text-white px-12 py-5 text-[18px] font-medium mt-3"
+                      className="bg-casa_8 text-white px-12 py-5 text-[18px] font-medium mt-3 uppercase"
                     >
-                      BOOK
+                      {t("events.book")}
                     </Link>
                   )}
                 </div>
