@@ -139,6 +139,9 @@ const MemoizedImage = React.memo(({ src, alt }) => (
   />
 ));
 
+// Setting the display name for the MemoizedImage component
+MemoizedImage.displayName = "MemoizedImage";
+
 const Gallery = () => {
   return (
     <div className="bg-casa_2 mx-auto py-5 px-4 mt-3">
