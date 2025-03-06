@@ -1,4 +1,5 @@
 import Loader from "./components/Loader";
+import Layout from "@/components/Layout";
 
 const page = () => {
   return (
