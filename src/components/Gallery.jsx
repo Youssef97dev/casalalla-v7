@@ -5,7 +5,7 @@ const Gallery = () => {
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-3 px-5 lg:px-32 py-5">
       <div className="w-full">
         <Image
-          src="https://res.cloudinary.com/dz7wroord/image/upload/c_thumb,h_740,w_600/casalalla-v2/wq4bfswckuo0ebocpfhi"
+          src="https://res.cloudinary.com/dz7wroord/image/upload/c_thumb,h_740,w_600/CasaLalla-VNor/f66rpshuoroemocbpbeg"
           height={740}
           width={600}
           className="object-cover"
@@ -19,7 +19,7 @@ const Gallery = () => {
           className="object-cover"
         />
         <Image
-          src="https://res.cloudinary.com/dz7wroord/image/upload/c_thumb,h_600,w_1000/casa%20Lalla/L-42_yc6rge"
+          src="https://res.cloudinary.com/dz7wroord/image/upload/c_thumb,h_600,w_1000/CasaLalla-VNor/kgr2b6b6i6llhc3o6rtb"
           height={600}
           width={1000}
           className="object-cover "
@@ -27,7 +27,7 @@ const Gallery = () => {
       </div>
       <div className="w-full">
         <Image
-          src="https://res.cloudinary.com/dz7wroord/image/upload/c_thumb,h_740,w_600/casalalla-v2/lhb2mbtjxmjl5p8jxycr"
+          src="https://res.cloudinary.com/dz7wroord/image/upload/c_thumb,h_740,w_600/CasaLalla-VNor/cpeheqlzvbffghpvdiu0"
           height={740}
           width={600}
           className="object-cover"

@@ -1,105 +1,166 @@
+"use client";
+import React from "react";
 import Image from "next/image";
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import Link from "next/link";
 
-const media = [
+const images = [
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casalalla-v2/e28ypfnpoadluzx8wtsy",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/hg0ykixiwpvehv9hdm4s",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/hg0ykixiwpvehv9hdm4s",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casalalla-v2/ycfub6xp8gjuz3gla8xh",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/og9byamwkz7hcphqlxsk",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/og9byamwkz7hcphqlxsk",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casalalla-v2/r4wuo58bxhpnhufpaeis",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/jfdaoehyg6ro3ei6eeqs",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/jfdaoehyg6ro3ei6eeqs",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casalalla-v2/izirylze8wxm7adeaewb",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/prpqg6qvbzkgcrqhqlpz",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/prpqg6qvbzkgcrqhqlpz",
   },
   {
-    type: "video",
-    url: "/video22.mp4",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/rixavtohk5qolpbtghy2",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/rixavtohk5qolpbtghy2",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/w3fer4hdvbzc1mcla9c3",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/ijf7z5lbtwayp94imo8s",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/ijf7z5lbtwayp94imo8s",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/ojybmuxnsftkryhs4ux1",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/i69kogh7plg5ejp4i3by",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/i69kogh7plg5ejp4i3by",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/ebol3p21f6cjzaei9duu",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/eayjwgwvofxlpf3qguso",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/eayjwgwvofxlpf3qguso",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/i7mqgy4ik8mhnsj6iecr",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/j3micvmlxad8p74qiqmv",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/j3micvmlxad8p74qiqmv",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/jb3ab9pc0rc8sopxwnhi",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/al4bcdkfinrevudk8zeq",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/al4bcdkfinrevudk8zeq",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/wi3nmf7jmw4awu1zehtk",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/cgww8rhzu6tppbuijmei",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/cgww8rhzu6tppbuijmei",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/gozcno1zhxhtooewuzhh",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/q2nzpahlmh9ptokalfbk",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/q2nzpahlmh9ptokalfbk",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/ire8b4lttkaofa5scit3",
-  },
-
-  {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/mqjl5dq6d9binkadxuk7",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/isyw8qmpv2eqyliz7jq4",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/isyw8qmpv2eqyliz7jq4",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/L-167_uhoybh",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/gqv9wtwifxewduw2bkxl",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/gqv9wtwifxewduw2bkxl",
   },
   {
-    type: "image",
-    url: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casa%20Lalla/casa15_zsi2sk",
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/wchy9aktwnjg2e0kshio",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/wchy9aktwnjg2e0kshio",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/cpeheqlzvbffghpvdiu0",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/cpeheqlzvbffghpvdiu0",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/jfziloryimjajcbxuj0k",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/jfziloryimjajcbxuj0k",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/alq72roudpmfktyfu5k2",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/alq72roudpmfktyfu5k2",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/ud4poelfjicsedkvxc6q",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/ud4poelfjicsedkvxc6q",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/mguv84339wzg6mbyeyel",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/mguv84339wzg6mbyeyel",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/qhiocnbz1aqhvzirfzhi",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/qhiocnbz1aqhvzirfzhi",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/k530wqfiey0i2d9fhvow",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/k530wqfiey0i2d9fhvow",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/irjsnwijta06o7jrx8yf",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/irjsnwijta06o7jrx8yf",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/hnwydmpvhljw0eietnnw",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/hnwydmpvhljw0eietnnw",
   },
 ];
 
+const MemoizedImage = React.memo(({ src, alt }) => (
+  <Image
+    src={src}
+    alt={alt}
+    width={300}
+    height={300}
+    loading="lazy" // Lazy loading
+    className="rounded-sm w-full h-full"
+  />
+));
+
+// Setting the display name for the MemoizedImage component
+MemoizedImage.displayName = "MemoizedImage";
+
 const GalleryImage = () => {
   return (
-    <div className="mx-auto py-5 px-4">
-      <div className="masonry">
-        {media.map((item, index) => (
-          <div
-            key={index}
-            className="masonry-item relative shadow-lg hover:scale-105 transition-all ease-linear overflow-hidden"
-          >
-            {item.type === "image" ? (
-              <Image
-                src={item.url}
-                alt={`Image casa lalla takerkoust ${index}`}
-                layout="responsive"
-                width={300}
-                height={300}
-                className="rounded-sm"
+    <div className="bg-casa_2 w-full mx-auto py-5 px-4 mt-3">
+      <LightGallery
+        speed={500}
+        plugins={[lgThumbnail]}
+        elementClassNames="masonry"
+      >
+        {images.map((image, index) => (
+          <Link href={image.thumbnail} key={index}>
+            <div className="masonry-item relative shadow-lg hover:scale-105 transition-all ease-linear overflow-hidden">
+              <MemoizedImage
+                src={image.src}
+                alt={`casa lalla takerkoust ${index}`}
               />
-            ) : (
-              <video
-                src={item.url}
-                controls
-                className="rounded-sm w-full"
-                width="300"
-                height="300"
-              >
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
+            </div>
+          </Link>
         ))}
-      </div>
+      </LightGallery>
     </div>
   );
 };

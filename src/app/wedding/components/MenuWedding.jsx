@@ -3,7 +3,7 @@ import Accordion from "./Accordion";
 
 const MenuWedding = () => {
   return (
-    <div className="w-full h-full bg-casa_6 flex flex-col lg:flex-row justify-center items-center lg:p-28 p-9 gap-5">
+    <div className="w-full h-full bg-casa_6 flex flex-col lg:flex-row justify-center items-center lg:p-28 p-9 gap-5 font-corporate">
       <div className="h-full w-full">
         <Image
           src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casalalla-v2/s1vrdwmbtl5wjuglo5fl"
