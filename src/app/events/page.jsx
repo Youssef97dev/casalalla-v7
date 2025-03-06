@@ -1,4 +1,5 @@
 import Loader from "./components/Loader";
+import Head from "next/head";
 
 export const metadata = {
   title: "Programming",
@@ -7,7 +8,16 @@ export const metadata = {
 };
 
 const page = () => {
-  return <Loader />;
+  return (
+    <>
+      <Head>
+        <link rel="icon" href={metadata.favicon} />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head>
+      <Loader />
+    </>
+  );
 };
 
 export default page;
