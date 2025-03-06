@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="w-full bg-[url('https://res.cloudinary.com/dz7wroord/image/upload/ar_9:16,c_crop/casalalla-v2/faynmvyht1juvuvkasun')] bg-cover bg-center bg-no-repeat flex flex-col lg:flex-row-reverse justify-start lg:justify-between items-center gap-8 lg:gap-24 px-5 lg:px-32 py-5 lg:py-28">
       <Image
-        src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/casalalla-v2/dsbquilbyrciyvbfz9uk"
+        src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/rixavtohk5qolpbtghy2"
         height={1000}
         width={500}
         className="object-cover mt-32"

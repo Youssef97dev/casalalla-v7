@@ -16,58 +16,36 @@ const events = [
   {
     id: 1,
     img_src:
-      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,h_4160,w_2774/casalalla-v2/izirylze8wxm7adeaewb",
-    title: "Traditional Christmas Lunch",
+      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,h_4160,w_2774/CasaLalla-VNor/og9byamwkz7hcphqlxsk",
+    title: "Fisrt Event",
     date_: "Wednesday 25th December",
     para_1:
-      "HoHoHo! the best Chef will be serving up a wonderful Christmas Feast, on festive tablescaped settinga.",
-    para_2: "Christmas Sweaters and Festive Attire very much encourages!",
+      "Stay tuned for exciting events at Casa Lalla! We will be hosting a variety of vibrant celebrations",
+    para_2: "",
     para_3: "800.00dhs per person",
     book: true,
   },
   {
     id: 2,
     img_src:
-      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,h_4160,w_2774/casa%20Lalla/ua80x5nvez8bkevotcf9",
-    title: "Belle & Bowie Pop Up & Styling Lounge",
+      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,h_4160,w_2774/CasaLalla-VNor/jfziloryimjajcbxuj0k",
+    title: "Second Event",
     date_: "Saturday 28th December",
     para_1:
-      "Belle & Bowie was born in Morocco and inspired by the vibrant energy of the studio 54 era, where Rock & Roll and Disco nights seamlessly blended.",
-    para_2:
-      "Just in time for New Year's Eve, we'll gather around the latest B&B pieces as Mimi shares her insights on day-to-night styling, offering tips on how to adapt trends and fashion to fit each body type using our current wardrobes.",
+      "Stay tuned for exciting events at Casa Lalla! We will be hosting a variety of vibrant celebrations",
+    para_2: "",
     book: false,
   },
   {
     id: 3,
     img_src:
-      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,h_4160,w_2774/casalalla-v2/dj2_uy7hdq",
-    title: "Festive Brunch with DJ and special guests",
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/hnwydmpvhljw0eietnnw",
+    title: "Third Event",
     date_: "Sunday 29th December",
-    para_1: "",
+    para_1:
+      "Stay tuned for exciting events at Casa Lalla! We will be hosting a variety of vibrant celebrations",
     para_2: "",
     book: false,
-  },
-  {
-    id: 4,
-    img_src:
-      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,g_south,h_4160,w_2774/casalalla-v2/lhb2mbtjxmjl5p8jxycr",
-    title: "New Year Brunch",
-    date_: "Wednesday 1st Junuary",
-    para_1:
-      "If you like to ease your way into the New Year a recovery Bloody Mary or if you prefer to start the new year with a bang on the 1st, our annual New Year Day Brunch is ideal for all. Last year we danced through the sunset and we intend to have another great day to start 2025.",
-    para_2: "800.00dhs per person",
-    book: true,
-  },
-  {
-    id: 5,
-    img_src:
-      "https://res.cloudinary.com/dz7wroord/image/upload/c_crop,g_south,h_4160,w_2774/casalalla-v2/lhb2mbtjxmjl5p8jxycr",
-    title: "New Year Brunch",
-    date_: "Wednesday 1st Junuary",
-    para_1:
-      "If you like to ease your way into the New Year a recovery Bloody Mary or if you prefer to start the new year with a bang on the 1st, our annual New Year Day Brunch is ideal for all. Last year we danced through the sunset and we intend to have another great day to start 2025.",
-    para_2: "800.00dhs per person",
-    book: true,
   },
 ];
 
