@@ -52,7 +52,7 @@ const events = [
 const Upcoming = () => {
   const { t } = useTranslation();
   return (
-    <div className="w-full flex flex-col justify-start items-center mt-8 gap-3 text-casa_8 px-2">
+    <div className="w-full flex flex-col justify-start items-center mt-8 gap-3 text-casa_8 px-2 font-corporate">
       <h1 className="mb-5 text-[34.548px] leading-[42.5631px] lg:text-[60px] lg:leading-[73.92px]">
         {t("events.upcoming")}
       </h1>
@@ -81,15 +81,15 @@ const Upcoming = () => {
                     className="w-full h-full object-cover"
                     alt="itemImage"
                   />
-                  <h1 className="text-3xl">{event.title}</h1>
-                  <h2 className="text-lg mb-3">{event.date_}</h2>
+                  <h1 className="text-2xl">{event.title}</h1>
+                  <h2 className=" mb-3">{event.date_}</h2>
                   <p>{event.para_1}</p>
                   <p>{event.para_2}</p>
                   <p>{event.para_3}</p>
                   {event.book && (
                     <Link
                       href="#"
-                      className="bg-casa_8 text-white px-12 py-5 text-[18px] font-medium mt-3 uppercase"
+                      className="bg-casa_8 text-white px-8 py-3 font-light mt-3 uppercase"
                     >
                       {t("events.book")}
                     </Link>

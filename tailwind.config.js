@@ -19,6 +19,9 @@ module.exports = {
         casa_9: "var(--daypass)",
         casa_10: "var(--daypass-1)",
       },
+      fontFamily: {
+        corporate: ["BillCorporateNarrow", "serif"],
+      },
       animation: {
         "slide-left": "slideLeft 2s ease-in-out forwards",
         "slide-right": "slideRight 2s ease-in-out forwards",

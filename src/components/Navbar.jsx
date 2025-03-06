@@ -116,8 +116,8 @@ const Navbar = () => {
           leaveFrom="transform translate-x-0 opacity-100"
           leaveTo="transform translate-x-full opacity-0"
         >
-          <div className="fixed top-10 right-0 z-10 w-full h-screen bg-casa_2 flex flex-col items-center justify-between">
-            <ul className="space-y-5 text-center text-casa_6 leading-[27.88px] text-[30px] mt-28 uppercase">
+          <div className="fixed top-10 right-0 z-[11] w-full h-screen bg-casa_2 flex flex-col items-center justify-between font-corporate">
+            <ul className="space-y-5 text-center text-casa_6 leading-[27.88px] text-[25px] mt-28 uppercase font-light">
               <li>
                 <Link href="/">{t("menu.home")}</Link>
               </li>
@@ -150,7 +150,7 @@ const Navbar = () => {
             </ul>
             <Link
               href="/booking"
-              className="bg-casa_6 fixed bottom-14 text-white px-7 py-4 text-[18px] font-medium"
+              className="bg-casa_6 fixed bottom-14 text-white px-7 py-4 text-[14px] font-light uppercase"
             >
               {t("menu.book")}
             </Link>
