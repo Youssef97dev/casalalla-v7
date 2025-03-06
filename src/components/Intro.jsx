@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 const Intro = () => {
   const { t } = useTranslation();
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-8 text-casa_6 text-center px-5 py-5 lg:px-80 font-corporate">
-      <h1 className="text-[32.52px] leading-[40.95px] lg:text-[47.83px] lg:leading-[62.14px] font-light">
+    <div className="w-full flex flex-col justify-center items-center gap-8 text-casa_7 text-center px-5 py-5 lg:px-80 font-corporate">
+      <h1 className="text-[32.52px] leading-[40.95px] lg:text-[47.83px] lg:leading-[62.14px] font-light text-casa_8">
         {t("home.title")}
       </h1>
       <p className="text-[15px] lg:text-[18px] leading-[22.5px]">
