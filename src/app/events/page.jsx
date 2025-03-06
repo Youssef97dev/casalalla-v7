@@ -1,15 +1,13 @@
 import Loader from "./components/Loader";
-import Layout from "@/components/Layout";
+
+export const metadata = {
+  title: "Casa Lalla Takerkoust | Programming",
+  description: "Exquisite cuisine and amazing panoramic view",
+  favicon: "/favicon.ico",
+};
 
 const page = () => {
-  return (
-    <Layout
-      title="Casa Lalla Takerkoust | Programming"
-      description="Exquisite cuisine and amazing panoramic view"
-    >
-      <Loader />
-    </Layout>
-  );
+  return <Loader />;
 };
 
 export default page;
